@@ -1,0 +1,7 @@
+>> t=0:0.01:1;
+>> y=2*pi*3*t;
+>> u=2*pi*3*t;
+>> t=t';
+>> u=u';
+>> plot(out.tout)
+>> plot(out.yout)

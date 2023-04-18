@@ -1,0 +1,66 @@
+>> plot(out.tout,out.simout)
+>> plot(out.ScopeData,'DisplayName','out.ScopeData')
+>> data1=ScopeData(:,2)
+Unrecognized function or variable 'ScopeData'.
+ 
+>> data1=out.ScopeData(:,2)
+
+data1 =
+
+         0
+    0.3760
+    0.7461
+    1.1044
+    1.4453
+    1.7634
+    2.0536
+    2.3115
+    2.5330
+    2.7145
+    2.8532
+    2.9469
+    2.9941
+    2.9941
+    2.9469
+    2.8532
+    2.7145
+    2.5330
+    2.3115
+    2.0536
+    1.7634
+    1.4453
+    1.1044
+    0.7461
+    0.3760
+    0.0000
+   -0.3760
+   -0.7461
+   -1.1044
+   -1.4453
+   -1.7634
+   -2.0536
+   -2.3115
+   -2.5330
+   -2.7145
+   -2.8532
+   -2.9469
+   -2.9941
+   -2.9941
+   -2.9469
+   -2.8532
+   -2.7145
+   -2.5330
+   -2.3115
+   -2.0536
+   -1.7634
+   -1.4453
+   -1.1044
+   -0.7461
+   -0.3760
+   -0.0000
+
+>> plot(data1)
+>> xlswrite('My data',data1)
+>> xlswrite('My data',data1,'B4:B42')
+
+To access structure data as an array: A = out.ScopeData.signals.values
